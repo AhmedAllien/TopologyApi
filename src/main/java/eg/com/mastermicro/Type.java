@@ -1,5 +1,5 @@
 package eg.com.mastermicro;
 
 public enum Type {
-    resistor,nmos;
+    resistor,nmos,pmos,capacitor
 }

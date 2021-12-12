@@ -1,5 +1,10 @@
 package eg.com.mastermicro;
 
+import java.util.ArrayList;
+
 public class Component {
-    Type type;
+
+    private Type type;
+    private String id;
+
 }
