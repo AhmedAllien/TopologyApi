@@ -2,7 +2,7 @@
 
 ## A Task from Master Micro company
 
-### java ### intellij ### gradle ### jackson
+### Java - intellij - Gradle - Jackson
 
 ## Functional Requirements:
 
