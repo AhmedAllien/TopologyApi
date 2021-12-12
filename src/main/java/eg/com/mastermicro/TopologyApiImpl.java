@@ -1,11 +1,14 @@
 package eg.com.mastermicro;
 
+import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectWriter;
 import eg.com.mastermicro.model.Component;
 import eg.com.mastermicro.model.Topology;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -24,9 +27,12 @@ public class TopologyApiImpl implements TopologyApi {
     }
 
     @Override
-    public Topology writeJSON(String topologyId) {
+    public Topology writeJSON(String topologyId) throws IOException {
+
         Topology topology = getTopologyById(topologyId);
-//        objectMapper.wr
+        ObjectMapper mapper = new ObjectMapper();
+        ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
+        writer.writeValue(Paths.get("topology1.json").toFile(),topology);
         return topology;
     }
 

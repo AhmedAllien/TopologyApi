@@ -8,6 +8,7 @@ public class Topology {
     private String id;
     private ArrayList<Component> components;
 
+
     public String getId() {
         return id;
     }
