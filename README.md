@@ -2,12 +2,12 @@
 
 ## A Task from Master Micro company
 
-#java
-#intellij
-#gradle
-#jackson
+# java
+# intellij
+# gradle
+# jackson
 
-##Functional Requirements:
+## Functional Requirements:
 
 1. Read a topology from a given JSON file and store it in the memory.
 2. Write a given topology from the memory to a JSON file.
