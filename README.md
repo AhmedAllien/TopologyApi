@@ -1,7 +1,5 @@
 # TopologyApi
 
-## A Task from Master Micro company
-
 ### Java - intellij - Gradle - Jackson
 
 ## Functional Requirements:
